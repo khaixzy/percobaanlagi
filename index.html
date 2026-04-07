@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <little>Praktikum Cloud</little>
-    </head>
-    <body>
-        <h1>Hello Cloud Computing</h1>
-        <h1>Universitas pamulang</h1>
-        <p>Nama :(Isi nama mahasiswa Unpam)</p>
-        <p>Nim : (Isi NIM Mahasiswa Unpam)</p>
-    </body>
+<head>
+    <title>Form Data Mahasiswa</title>
+</head>
+<body>
+
+    <h2>Input Data Mahasiswa</h2>
+
+    <label>Nama:</label><br>
+    <input type="text" id="nama"><br><br>
+
+    <label>NIM:</label><br>
+    <input type="text" id="nim"><br><br>
+
+    <button onclick="tampilkan()">Kirim</button>
+
+    <h3>Hasil:</h3>
+    <p id="hasil"></p>
+
+    <script>
+        function tampilkan() {
+            var nama = document.getElementById("nama").value;
+            var nim = document.getElementById("nim").value;
+
+            document.getElementById("hasil").innerHTML =
+                "Nama: " + nama + "<br>NIM: " + nim;
+        }
+    </script>
+
+</body>
 </html>
