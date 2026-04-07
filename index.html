@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Form Data Mahasiswa</title>
-    <liitle>Praktikum Cloud</liitle>
+    <title>Praktikum Cloud</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            color: #333;
+            font-size: 18px;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
+
     <h1>Hello Cloud Computing</h1>
-    <h1>Universitas pamulang</h1>
-    
-    <h2>Input Data Mahasiswa</h2>
+    <h1>Universitas Pamulang</h1>
 
-    <label>Nama:</label><br>
-    <input type="text" id="nama"><br><br>
+    <div class="box">
+        <h3>Input Data Mahasiswa</h3>
 
-    <label>NIM:</label><br>
-    <input type="text" id="nim"><br><br>
+        <input type="text" id="nama" placeholder="Masukkan Nama"><br><br>
+        <input type="text" id="nim" placeholder="Masukkan NIM"><br><br>
 
-    <button onclick="tampilkan()">Kirim</button>
+        <button onclick="tampilkan()">Kirim</button>
 
-    <h3>Hasil:</h3>
-    <p id="hasil"></p>
+        <h3>Hasil:</h3>
+        <p id="hasil"></p>
+    </div>
 
     <script>
         function tampilkan() {
